@@ -21,12 +21,12 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Hajnal Máté # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: Just an engineer who likes coding, economics and political discussions. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  This is hajnalmt's corner on the internet, welcome on the page.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: ""
@@ -35,13 +35,13 @@ github:
   username: hajnalmt # change to your github username
 
 twitter:
-  username: twitter_username # change to your twitter username
+  username: hajnalmt # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Hajnal Máté
-  email: hajnalmt@gmail.comdoamin.com # change to your email address
+  email: hajnalmt@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/hajnalmt # change to your twitter homepage
@@ -73,14 +73,14 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: dark # [light|dark]
+theme_mode: # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "https://raw.githubusercontent.com/hajnalmt/hajnalmt-blog/assets/"
+img_cdn: "https://raw.githubusercontent.com/hajnalmt/hajnalmt-blog/master/assets/"
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "profile_picture_cropped.png"
