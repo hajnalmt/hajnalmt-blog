@@ -26,6 +26,12 @@ Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installat
 You can start the website with the Makefile too, if you have docker installed, and started on your machine just run:
 
 ```
+make up
+```
+
+To make a local build please use:
+
+```
 make build
 ```
 
