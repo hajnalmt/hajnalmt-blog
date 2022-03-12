@@ -31,6 +31,9 @@ description: >- # used by seo meta and the atom feed
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://hajnalmt.hu"
 
+gitlab:
+  username: hajnalmt # change to your gitlab username
+
 github:
   username: hajnalmt # change to your github username
 
@@ -45,10 +48,12 @@ social:
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/hajnalmt # change to your twitter homepage
-    - https://github.com/hajnalmt # change to your github homepage
+    - https://github.com/hajnalmt
+    - https://gitlab.com/hajnalmt
+    # change to your github homepage
     # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.facebook.com/mate.hajnal.3/
+    - https://www.linkedin.com/in/hajnalmt
 
 google_site_verification: # fill in to your verification string
 
