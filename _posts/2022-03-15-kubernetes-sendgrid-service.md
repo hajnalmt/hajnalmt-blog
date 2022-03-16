@@ -101,7 +101,7 @@ Regarding about the nginx configuration the [upstream-vhost](https://kubernetes.
 The [proxy-body-size](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/#custom-max-body-size) annotation will set the [client_max_body_size](http://nginx.org/en/docs/http/ngx_http_core_module.html#client_max_body_size) nginx directive, which means that there won't be any size checking on the requests.
 Furthermore the SSL redirection, and the https backend protocol annotations will ensure the HTTPS connection between the ingress and the Backend service.
 
-The final appliable one-file configuration is the following:
+The final applicable one-file configuration is the following:
 ```yaml
 apiVersion: v1
 kind: Namespace
