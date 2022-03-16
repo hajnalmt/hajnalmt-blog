@@ -33,7 +33,7 @@ Although there are some [best pracices](https://docs.sendgrid.com/ui/analytics-a
 
 When we are speaking about SSL click tracking, we want to route the https links appropriately to the sendgrid server and than to us seemlessly. The than to us part is done by sendgrid itself, so we need to focus on the first one. The [documentation](https://docs.sendgrid.com/ui/analytics-and-reporting/click-tracking-ssl) says to use CDN to manage the certificates, which is intriguing at least, and you need to pay for these services.
 
-The second paragraph says that the other way is to setup a [custom ssl configuration](https://docs.sendgrid.com/ui/account-and-settings/custom-ssl-configurations), so I started to dived into it.
+The second paragraph says that the other way is to setup a [custom ssl configuration](https://docs.sendgrid.com/ui/account-and-settings/custom-ssl-configurations), so I started to dive into it.
 So far when you set up the linkbranding you have already created the domain routing, with the CNAME domain entry setting: `urlxxxx.yourdoamin.com` to `sendgrid.net`.
 This is the url you will need into the upcoming tutorial. The task itself is to prepare a proxy which receives all the inbound traffic and forwards it to http://sendgrid.net or https://sendgrid.net in our case, which means in Kubernetes terms, to setup an ingress with a backend service.
 
