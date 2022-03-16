@@ -31,19 +31,18 @@ Although there are some [best pracices](https://docs.sendgrid.com/ui/analytics-a
 
 ### SSL Click tracking
 
-When we are speaking about SSL click tracking, we want to route the https links appropriately to the sendgrid server and than to us seemless. The [documentation](https://docs.sendgrid.com/ui/analytics-and-reporting/click-tracking-ssl) says to use CDN to manage the certificates, which is intriguing at least, and you need to pay for these services.
+When we are speaking about SSL click tracking, we want to route the https links appropriately to the sendgrid server and than to us seemlessly. The than to us part is done by sendgrid itself, so we need to focus on the first one. The [documentation](https://docs.sendgrid.com/ui/analytics-and-reporting/click-tracking-ssl) says to use CDN to manage the certificates, which is intriguing at least, and you need to pay for these services.
 
-The other part is to setup a [custom ssl configuration](https://docs.sendgrid.com/ui/account-and-settings/custom-ssl-configurations), so I started to dive into it.
-So far when you set up the linkbranding, you needed to route `urlxxxx.yourdoamin.com` to `sendgrid.net` as a CNAME domain entry.
-
-Now the task is to prepate a prox which receives all the inbound traffic and forwards it to http://sendgrid.net or https://sendgrid.net, which means in Kubernetes terms, to setup an ingress with a backend service.
+The second paragraph says that the other way is to setup a [custom ssl configuration](https://docs.sendgrid.com/ui/account-and-settings/custom-ssl-configurations), so I started to dived into it.
+So far when you set up the linkbranding you have already created the domain routing, with the CNAME domain entry setting: `urlxxxx.yourdoamin.com` to `sendgrid.net`.
+This is the url you will need into the upcoming tutorial. The task itself is to prepare a proxy which receives all the inbound traffic and forwards it to http://sendgrid.net or https://sendgrid.net in our case, which means in Kubernetes terms, to setup an ingress with a backend service.
 
 ### Ingress and service
 
-We use an [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/) with a cert-manager ClusterIssuer in our Kubernetes cluster, but first we need to have a service to route our traffic to.
+We use an [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/) with a cert-manager ClusterIssuer in our Kubernetes cluster, and most of the time this will be your case too, but to create an ingress we need to have a service first which it can point to, so we are starting with that.
 This [stackoverflow post](https://stackoverflow.com/questions/64705450/redirecting-traffic-to-external-url) is really helpful to understand all of this.
 
-The Service just needs to forward traffik to an external DNS (sendgrid.net). Kubernetes has a solution for it, we can define an [ExternalName](https://kubernetes.io/docs/concepts/services-networking/service/#externalname) type Service for this, which exactly does that.
+The Service just needs to forward traffic to an external DNS (sendgrid.net). Kubernetes has a solution for it, we can define an [ExternalName](https://kubernetes.io/docs/concepts/services-networking/service/#externalname) type Service for this, which exactly does that.
 
 So the Service will look like this.
 
@@ -147,4 +146,4 @@ spec:
       secretName: urlxxxx.yourdoamin.com
 ```
 
-With this configuration you will be able to create any external proxy in your Kubernetes Cluster too, so I hope this helps.
+With this configuration you will be able to create any external dns proxy in your Kubernetes Cluster too, so I hope this helps!
