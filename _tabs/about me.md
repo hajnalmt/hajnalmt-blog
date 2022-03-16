@@ -13,6 +13,6 @@ In the meantime I started an MBA at the Eötvös Lóránd University and started
 
 My past works were at [Bosch](https://www.bosch.com/), and at [Flex](https://flex.com/) with the collaboration of the [Beko Engineering Ltd.](https://beko.hu/). Currently I am working at [Digitlean Ltd.](https://digitlean.com/) as the Chief Technology Officer, which is a little startup in Hungary with tha aim to provide a tool for the manufacturing companies, which with they can increase their efficiency.
 
-My nail of interest is really wide, but I will try to narrow it down to the tech related stuff, on this little blog.
+My nail of interest is really wide, but I will try to narrow it down to the tech related stuff on this little blog.
 
 In my free time I really like to play chess, watching films, discussing politics and coding.
