@@ -11,7 +11,7 @@ pin: true
 
 TLDR: Here is my new CV written in latex:
 
-- [English CV](https://drive.google.com/file/d/17Z3JO9Zyej4JeLRGrolceyRGYjzjHqmu/view?usp=sharing)
+- [English CV](https://drive.google.com/file/d/1w9XPNOJqwdFYGPSs9rpwU5A90er08wni/view?usp=sharing)
 - [Hungarian CV](https://drive.google.com/file/d/101Q_XXq0CKaU8eYaTHczFFJKDnnm52_-/view?usp=sharing)
 
 The source code link on Overleaf: [Hajnal Mate CV](https://www.overleaf.com/read/jxmrjgcshztv).
