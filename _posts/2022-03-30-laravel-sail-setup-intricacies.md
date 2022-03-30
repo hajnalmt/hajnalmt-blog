@@ -10,14 +10,14 @@ pin: true
 ---
 
 I needed to create a laravel blog motor for one of my interviews in the past 2 weeks, and even to just get started I bumped into some problems.
-To be a little bit more specific, the problem was that the WSL2 DNS settings are a little bit vague, and I am quite surprised that I didn't find more complaint about it. Basically 2-3 issues and posts which I was able to find.
+To be a little bit more specific, the problem was that the WSL2 DNS settings are really vaguely implemented, and I am quite surprised that I didn't find more complaint about it. Basically 2-3 issues and posts which I was able to find.
 So if you managed to get here due to the same errors I got, this post will help.
 
 ### The command which shall work
 
-To get started with a laravel project even the new Laravel 9 documentation says that use sail under WSL2 to get started, and this is big a relief for me, that even the laravel community jumped into the microservice architecture-base development. No more XAMPP and php version management, thank god times are changing.
+To get started with a laravel project even the new [Laravel 9 documentation](https://laravel.com/docs/9.x/installation#getting-started-on-windows) says that use sail under WSL2 to get started, and this is big a relief for me, that even the laravel community jumped into the microservice architecture-based development. No more XAMPP and php version management, thank god times are changing.
 
-So the official [Laravel 9 docs](https://laravel.com/docs/9.x/installation#getting-started-on-windows) suggests to install WSL2 and Docker Desktop. To be fair I had a WSL2 Ubuntu 20.04 LTS with a docker-ce and docker-cli installed already and due to the last years [licensing misery](https://www.docker.com/blog/updating-product-subscriptions/) of the Docker Desktop I try to stay away from it.
+So the official [Laravel 9 docs](https://laravel.com/docs/9.x/installation#getting-started-on-windows) suggests to install WSL2 and Docker Desktop. To be fair I had a WSL2 Ubuntu 20.04 LTS with a docker-ce and docker-cli installed already and due to the last year's [licensing misery](https://www.docker.com/blog/updating-product-subscriptions/) of the Docker Desktop I try to stay away from it.
 
 This means that according to the docs, one curl command and I shall be ready to go:
 
@@ -56,7 +56,7 @@ No directory created so what happened?
 ### The DNS resolver error
 
 The output suggests that the problem is probably with my dns setup.
-When I checked, what are the commands I try to run exactly, and entered the [curled url](https://laravel.build/little-laravel-blog/?with=pgsql,selenium) in a browser, it came out that it just runs <code>{% raw %}laravelsail/php81-composer:latest{% endraw %}</code> container with an artisan command.
+When I checked what are the commands I try to run exactly and entered the [curled url](https://laravel.build/little-laravel-blog/?with=pgsql,selenium) in a browser, it came out that it just runs <code>{% raw %}laravelsail/php81-composer:latest{% endraw %}</code> container with an artisan command.
 
 So I thought that maybe I will try to run the command myself and reproduce the issue, and I managed to do it.
 
@@ -153,8 +153,7 @@ Application ready! Build something amazing.
 ### Editing the compose file too
 
 Despite solving this issue, the problem still came up when I tried the <code>{% raw %}sail up{% endraw %}</code> command.
-At first I tried to edit my wsl2 dns configuration (which is the main reason this whole laravel setup just doesn't work at a glance).
-After several try, I just gave up. I have tried every method, the [internet suggested](https://superuser.com/questions/1533291/how-do-i-change-the-dns-settings-for-wsl2). I even crashed wsl with one of my attempt, but the main problem that the dns configuration gets generated on every new restart, so either your configuration will be lost after restarting the terminal, or there is a possibility, that you will mess up your dns configuration, which is not fun.
+My first attempt was to edit my wsl2 dns configuration (which is the main reason this whole laravel setup just doesn't work at a glance), but after several try, I just gave up. I have tried every method, the [internet suggested](https://superuser.com/questions/1533291/how-do-i-change-the-dns-settings-for-wsl2). I even crashed wsl with one of my attempts, but I couldn't overcome the issue that the dns configuration gets generated on every new restart, so either your configuration will be lost after restarting the terminal, or there is a possibility, that you will mess up your wsl2 dns configuration, which is not fun.
 
 The permanent solution is just to edit your docker-compose.yml file to use the google dns.
 
