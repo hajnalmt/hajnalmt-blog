@@ -4,15 +4,33 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-I was born at Kecskemét, Hungary in 1993, and settled down in this little town with my beautiful wife and daughter.
+I was born in Kecskemét, Hungary in 1993, and I still live here with my wife and two daughters.
 
-After finishing the secondary school I have graduated as an Electrical Engineer Msc at the Budapest University of Technology and Economics, with the main faculty of Computer-based systems and Applied electronics as minor.
-Due to this my heart will always be into the low level electronics and code, although I am working on a different stack in the last few years.
+I hold an MSc in Electrical Engineering from the Budapest University of
+Technology and Economics, focused on computer-based systems with applied
+electronics as a minor. That foundation shaped how I approach technology:
+I enjoy building practical software, but I still have a soft spot for
+low-level systems and electronics.
 
-In the meantime I started an MBA at the Eötvös Lóránd University and started to focus on my management skills too.
+Alongside my engineering work, I also started an MBA at Eötvös Loránd
+University to grow my leadership and management skills.
 
-My past works were at [Bosch](https://www.bosch.com/), and at [Flex](https://flex.com/) with the collaboration of the [Beko Engineering Ltd.](https://beko.hu/). Currently I am working at [Digitlean Ltd.](https://digitlean.com/) as the Chief Technology Officer, which is a little startup in Hungary with tha aim to provide a tool for the manufacturing companies, which with they can increase their efficiency.
+Over the years, I have worked with [Bosch](https://www.bosch.com/),
+[Nokia](https://www.nokia.com/), [Red Hat](https://www.redhat.com/), and
+[Flex](https://flex.com/) in collaboration with
+[Beko Engineering Ltd.](https://beko.hu/), and held multiple engineering
+and technology leadership roles across manufacturing and software-focused
+teams. I previously served as CTO at
+[Digitlean Ltd.](https://digitlean.com/), where we built digital tools to
+help manufacturing companies improve efficiency. Today, I work at
+[Aumovio](https://www.aumovio.com/) and continue focusing on practical,
+high-impact technology solutions.
 
-My nail of interest is really wide, but I will try to narrow it down to the tech related stuff on this little blog.
+I am a lifelong learner and stay active across a wide range of software
+topics, from backend and systems work to web technologies.
 
-In my free time I really like to play chess, watching films, discussing politics and coding.
+On this blog, I mostly write about technology, software, and engineering
+lessons I find worth sharing.
+
+Outside work, I enjoy chess, films, coding, and thoughtful debates on
+public life.
