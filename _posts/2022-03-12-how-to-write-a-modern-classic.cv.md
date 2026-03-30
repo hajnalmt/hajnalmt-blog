@@ -6,7 +6,7 @@ author:
 categories: [Blogging, CV, Writing]
 tags: [writing, cv, latex, moderncv, gitlabicon, socialgitlab]
 toc: false
-pin: true
+pin: false
 ---
 
 TLDR: Here is my new CV written in latex:

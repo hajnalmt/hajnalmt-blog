@@ -6,7 +6,7 @@ author:
 categories: [Blogging, CV, Writing]
 tags: [sendgrid, ssltracking, ssl, clicktracking, kubernetes, ingress]
 toc: false
-pin: true
+pin: false
 ---
 
 Before I get into the article I want to thank tg44 (Gergő Törcsvári) who created the final configuration, check [his blog](https://tg44.github.io/) too if you have some time.

@@ -6,7 +6,7 @@ author:
 categories: [Blogging, Purpose]
 tags: [writing]
 toc: false
-pin: true
+pin: false
 ---
 
 By the time most of the developers feel like, that it would be really cool, to share their thoughts online about the stuff they deal with every day.

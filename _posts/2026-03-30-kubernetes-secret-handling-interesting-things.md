@@ -6,7 +6,7 @@ author:
 categories: [Kubernetes, Security]
 tags: [kubernetes, secrets, security, devops, rbac, encryption]
 toc: true
-pin: false
+pin: true
 ---
 
 Kubernetes Secrets look simple at first glance, but real-world handling has

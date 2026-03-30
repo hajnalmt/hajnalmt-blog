@@ -6,7 +6,7 @@ author:
 categories: [Laravel, Sail, WSL2]
 tags: [laravel, sail, wsl2, dnsproblem, dns]
 toc: false
-pin: true
+pin: false
 ---
 
 I needed to create a laravel blog motor for one of my interviews in the past 2 weeks, and even to just get started I bumped into some problems.
