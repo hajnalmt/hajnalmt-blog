@@ -244,17 +244,11 @@ actual security level.
 
 ### References
 
-1. Kubernetes docs - Secrets: https://kubernetes.io/docs/concepts/configuration/secret/
-2. Kubernetes docs - Distribute credentials securely to Pods:
-   https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/
-3. Kubernetes docs - Immutable Secrets and ConfigMaps:
-   https://kubernetes.io/docs/concepts/configuration/secret/#immutable-secrets
-4. Kubernetes docs - ServiceAccount token volume projection:
-   https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
-5. Kubernetes docs - Encrypt data at rest:
-   https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/
-6. Kubernetes docs - RBAC reference:
-   https://kubernetes.io/docs/reference/access-authn-authz/rbac/
-7. External Secrets Operator docs: https://external-secrets.io/latest/
-8. Secrets Store CSI Driver docs:
-   https://secrets-store-csi-driver.sigs.k8s.io/
+1. [Kubernetes docs - Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
+2. [Kubernetes docs - Distribute credentials securely to Pods](https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/)
+3. [Kubernetes docs - Immutable Secrets and ConfigMaps](https://kubernetes.io/docs/concepts/configuration/secret/#immutable-secrets)
+4. [Kubernetes docs - ServiceAccount token volume projection](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
+5. [Kubernetes docs - Encrypt data at rest](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/)
+6. [Kubernetes docs - RBAC reference](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
+7. [External Secrets Operator docs](https://external-secrets.io/latest/)
+8. [Secrets Store CSI Driver docs](https://secrets-store-csi-driver.sigs.k8s.io/)
