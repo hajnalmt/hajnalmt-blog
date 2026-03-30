@@ -10,8 +10,8 @@ pin: true
 Kubernetes Secrets look simple at first glance, but real-world handling has
 some non-obvious behavior. This is a practical walkthrough of details that are
 easy to miss, especially when moving from a small cluster to production.
-> Quick reminder: a Secret is only base64-encoded by default; it is not
-> encrypted by itself.
+> **Quick reminder:**  
+> A Secret is only base64-encoded by default; it is not encrypted by itself.
 {: .prompt-warning}
 
 ### 1) Base64 is transport format, not protection
@@ -32,6 +32,18 @@ data:
 
 Anyone who can read the Secret object from the API can decode these values.
 Treat base64 as packaging only.
+
+Useful inspection commands with `kubectl` and `base64 -d`:
+
+```bash
+# Decode one key from a Secret
+kubectl get secret app-credentials -n default \
+  -o jsonpath='{.data.password}' | base64 -d; echo
+
+# Decode all keys from a Secret
+kubectl get secret app-credentials -n default \
+  -o json | jq -r '.data | to_entries[] | "\(.key)=\(.value|@base64d)"'
+```
 
 ### 2) `stringData` is convenient, but write-only
 
@@ -66,7 +78,9 @@ stringData:
   username: admin
   password: supersecret
 EOF
+```
 
+```bash
 kubectl get secret demo-stringdata -n default -o yaml
 ```
 
