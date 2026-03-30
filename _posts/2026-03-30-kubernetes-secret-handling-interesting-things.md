@@ -13,8 +13,8 @@ Kubernetes Secrets look simple at first glance, but real-world handling has
 some non-obvious behavior. This is a practical walkthrough of details that are
 easy to miss, especially when moving from a small cluster to production.
 
-> Quick reminder: a Secret is only base64-encoded by default, not encrypted by
-> itself.
+
+> Quick reminder: Secret is only base64-encoded by default, not encrypted by itself.
 {: .prompt-warning }
 
 ### 1) Base64 is transport format, not protection
