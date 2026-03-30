@@ -1,8 +1,6 @@
 ---
 title: NIGNX proxy in Kubernetes for Sendgrid SSL click Tracking
-author:
-  name: Mate Hajnal
-  link: https://github.com/hajnalmt
+author: hajnalmt
 categories: [Blogging, CV, Writing]
 tags: [sendgrid, ssltracking, ssl, clicktracking, kubernetes, ingress]
 toc: false

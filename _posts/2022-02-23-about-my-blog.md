@@ -1,8 +1,6 @@
 ---
 title: Starting at somewhere
-author:
-  name: Mate Hajnal
-  link: https://gitlab.com/hajnalmt
+author: hajnalmt
 categories: [Blogging, Purpose]
 tags: [writing]
 toc: false

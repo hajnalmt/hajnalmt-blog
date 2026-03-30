@@ -1,8 +1,6 @@
 ---
 title: How to write a cv in latex with moderncv template
-author:
-  name: Mate Hajnal
-  link: https://github.com/hajnalmt
+author: hajnalmt
 categories: [Blogging, CV, Writing]
 tags: [writing, cv, latex, moderncv, gitlabicon, socialgitlab]
 toc: false

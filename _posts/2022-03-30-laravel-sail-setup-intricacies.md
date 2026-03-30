@@ -1,8 +1,6 @@
 ---
 title: The intricacies of a laravel project setup with sail under WSL2
-author:
-  name: Mate Hajnal
-  link: https://gitlab.com/hajnalmt
+author: hajnalmt
 categories: [Laravel, Sail, WSL2]
 tags: [laravel, sail, wsl2, dnsproblem, dns]
 toc: false

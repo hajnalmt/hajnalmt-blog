@@ -2,7 +2,11 @@
 
 source "https://rubygems.org"
 
-gem "jekyll-theme-chirpy", "~> 5.1", ">= 5.1.0"
+ruby "~> 3.3.0"
+
+gem "jekyll", "~> 4.4.1"
+gem "jekyll-theme-chirpy", "~> 5.6", ">= 5.6.1"
+gem "bigdecimal"
 
 group :test do
   gem "html-proofer", "~> 3.18"
@@ -18,5 +22,4 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
-# Jekyll <= 4.2.0 compatibility with Ruby 3.0
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.9"
