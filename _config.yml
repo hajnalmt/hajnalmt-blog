@@ -23,10 +23,12 @@ timezone: Europe/Budapest
 
 title: Hajnal Máté # the main title
 
-tagline: Just an engineer who likes coding, economics and political discussions. # it will display as the sub-title
+tagline: The leap from good software to great software is careful listening. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  This is hajnalmt's corner on the internet, welcome on the page.
+  This is hajnalmt's corner on the internet, welcome on the page. A software
+  engineering blog focused on building great software through careful
+  listening, clear thinking, and practical execution.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://hajnalmt.hu"
