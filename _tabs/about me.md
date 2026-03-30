@@ -12,9 +12,9 @@ electronics as a minor. That foundation shaped how I approach technology:
 I enjoy building practical software, but I still have a soft spot for
 low-level systems and electronics.
 
-Alongside my engineering work, I also earned an MBA from Eötvös Loránd
-University. I completed majors in finance and management, and I also
-finished the full set of marketing-related subjects. Although the
+Alongside my engineering work, I earned an MBA from Eötvös Loránd
+University, completing majors in both finance and management while also
+finishing the full set of marketing-related subjects. Although the
 program expects students to choose one faculty, I was allowed to pursue
 two majors (and, sadly, not a third one 😄), which reflects how eager I
 am to keep learning. This helped me grow my leadership and management
