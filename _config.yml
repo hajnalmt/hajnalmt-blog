@@ -23,7 +23,7 @@ timezone: Europe/Budapest
 
 title: Hajnal Máté # the main title
 
-tagline: The leap from good software to great software is careful listening. # it will display as the sub-title
+tagline: The leap from good software to great software is careful listening. Oh and tokens, that's useful too. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   This is hajnalmt's corner on the internet, welcome on the page. A software
